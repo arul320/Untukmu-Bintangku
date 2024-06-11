@@ -1,0 +1,133 @@
+/* styles.css */
+body {
+    font-family: 'Lora', serif;
+    background-color: #ffe6f2;
+    color: #ad1457;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: #f48fb1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.poem {
+    margin-bottom: 40px;
+    font-family: 'Lora', serif;
+    line-height: 1.8;
+}
+
+.poem h3 {
+    font-size: 1.2em;
+    color: #d81b60;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.poem p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+.decoration img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #880e4f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.decoration img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f48fb1;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Additional Decorations */
+body::before, body::after {
+    content: "❤";
+    font-size: 100px;
+    color: rgba(255, 105, 180, 0.2);
+    position: absolute;
+    z-index: -1;
+    animation: float 6s ease-in-out infinite;
+}
+
+body::before {
+    top: 10%;
+    left: 10%;
+}
+
+body::after {
+    bottom: 10%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Flower Decorations */
+.flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('flower.png') no-repeat center center;
+    background-size: contain;
+    animation: spin 20s linear infinite;
+}
+
+.flower1 { top: 20%; left: 5%; }
+.flower2 { top: 50%; left: 80%; }
+.flower3 { top: 80%; left: 20%; }
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* More flower decorations */
+.flower4 { top: 30%; left: 70%; }
+.flower5 { top: 60%; left: 10%; }
+.flower6 { top: 90%; left: 50%; }
